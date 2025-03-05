@@ -4,7 +4,7 @@ $username = "root";
 $password = " ";
 $connect =  mysqli_connect($servername,$username,$password);
 if(!$scan){
-    die("Connection Failed: .mysqli_connect-error() ");
+    die("Connection Failed: .mysqli_connect_error() ");
 }
 $sql="CREATE DATABASE webTech";
 
