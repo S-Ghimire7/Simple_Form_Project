@@ -10,4 +10,4 @@ if (mysqli_query($conn,$sql)){
 if (!$conn) {
     die("Gu Khayo: " . mysqli_connect_error());
 }
-?> 
+?>    
