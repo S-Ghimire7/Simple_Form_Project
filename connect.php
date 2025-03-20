@@ -1,13 +1,10 @@
 <?php
+// MADE BY SHLOK GHIMIRE
 $servername = "localhost";
 $username = "root";
 $password = "";
-$sql = "CREATE DATABASE KUMAR1";
-$conn = mysqli_connect($servername, $username, $password);
-if (mysqli_query($conn,$sql)){
-    echo"Banyo Hai Keto aba table ahal";
-}
+$dbname = "kumar1";
+$conn = mysqli_connect($servername, $username, $password, $dbname);
 if (!$conn) {
-    die("Gu Khayo: " . mysqli_connect_error());
+    die("Connection failed: " . mysqli_connect_error());
 }
-?>    

@@ -1,14 +1,14 @@
 <?php
+//MADE BY SHLOK GHIMIRE
 include 'connect.php';
-$user="Seabird";
-$email="Seabird@gmail.com";
-$age=25;
-$sql="INSERT INTO random('$user','$email','$age','$pass')";
-if (mysqli_query($conn,$sql)){
-echo"waah data pani haldeko don";
+$user = "Sea";
+$email = "Sea@gmail.com";
+$age = 25;
+$sql = "INSERT INTO users (user, email, age) VALUES ('$user', '$email', $age)";
+if (mysqli_query($conn, $sql)) {
+    echo "Waah! Data pani haldeko don";
+} else {
+    echo "Error: " . mysqli_error($conn);
 }
-else{
-    echo"mysqli_error($conn)";
-}
-    mysqli_close($conn);
+mysqli_close($conn);
 ?>
