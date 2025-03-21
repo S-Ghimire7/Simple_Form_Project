@@ -1,1 +1,2 @@
-This is for the computer project given to me in grade 12
+This is for the computer project.
+Grade 12
