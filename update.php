@@ -1,11 +1,10 @@
 <?php
-//MADE BY SHLOK GHIMIRE
+// MADE BY SHLOK GHIMIRE
 include 'connect.php';
-$id = 1;
-$user = "Kumar";
-$email = "Kumar@gmail.com";
-$age = 50;
-$sql = "UPDATE users SET user = '$user', email = '$email', age = $age WHERE id = $id";
+$user = "shyam";
+$email = "shyam@gmail.com";
+$age = 22;
+$sql = "UPDATE Users SET std = '$user', email = '$email', age = $age WHERE id = $id";
 if (mysqli_query($conn, $sql)) {
     echo "Data update bhayo hai keto!";
 } else {
@@ -13,3 +12,4 @@ if (mysqli_query($conn, $sql)) {
 }
 mysqli_close($conn);
 ?>
+
