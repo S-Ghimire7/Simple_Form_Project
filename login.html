@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body> 
+    <h1>Registration Form</h1> <br>
+    <div id="loadingMessage" style="display:none;">Submitting your information, please wait...</div>
+    <form action="it.php" method="POST" onsubmit="handleFormSubmit(event)">
+        <label class="name" for="user">Username:</label>
+        <div><input type="text" id="user" name="user" required></div><br><br>
+        <label class="name" for="email">Email:</label>
+        <div><input type="email" id="email" name="email" required></div><br><br>
+        <label class="name" for="age">Age:</label>
+        <div><input type="number" id="age" name="age" min="1" required></div><br><br>
+        <div class="btncen"><button class="button-4" type="submit">Submit</button></div>
+    </form><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="home"><h1><button class="button-18"><a href="retireve.php">To Admin Panel</a></button></h1></div>
+</body>
+</html>
+

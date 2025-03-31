@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="login.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Information</title>
 </head>
 <body>
-    <button><a href="retireve.php">To Admin Panel</a></button>
+    
     <h1>User Information</h1>
-    <form action="retireve.php" method="POST">
+    <form action="insert.php" method="POST">
+            <label for="id">ID:</label>
+            <input type="text" form="hidden" id="ID" name="ID" required><br>
+
             <label for="user">Username:</label>
             <input type="text" form="hidden" id="user" name="user" required><br>
             
@@ -19,4 +23,5 @@
             <input type="number" form="hidden" id="age" name="age" required><br>
             <input type="submit" value="Submit">
         </form>
+       <div class="home"><button class="button-18"><a href="retireve.php">Admin Panel</a></button></div>
         </html>
